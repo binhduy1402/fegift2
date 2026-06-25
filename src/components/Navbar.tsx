@@ -30,14 +30,12 @@ export default function Navbar({ onInquireClick }: NavbarProps) {
       <div className="luxury-container flex h-16 items-center justify-between">
 
         {/* Logo */}
-        <a href="#" className="group flex items-center gap-3">
+        <a href="#" className="group flex items-center">
           <img
             src={logo}
             alt="FESGift"
-            className="h-14 w-auto transition duration-500 group-hover:scale-105"
+            className="h-14 w-auto transition-all duration-500 group-hover:scale-105"
           />
-
-          </div>
         </a>
 
         {/* Desktop Menu */}
