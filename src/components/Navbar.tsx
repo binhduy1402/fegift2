@@ -29,25 +29,6 @@ export default function Navbar({ onInquireClick }: NavbarProps) {
     >
       <div className="luxury-container flex h-16 items-center justify-between">
 
-        {/* Logo */}
-        <a href="#" className="group flex items-center gap-3">
-          <img
-            src={logo}
-            alt="FESGift"
-            className="h-14 w-auto transition duration-500 group-hover:scale-105"
-          />
-
-          <div className="hidden lg:block">
-            <div className="font-serif text-xl tracking-wide text-[#f5e8c8]">
-              FESGift
-            </div>
-
-            <div className="text-[10px] uppercase tracking-[0.35em] text-[#c49b47]">
-              Heritage & Grace
-            </div>
-          </div>
-        </a>
-
         {/* Desktop Menu */}
         <div className="hidden items-center gap-8 md:flex">
           {NAVIGATION_LINKS.map((link) => (
