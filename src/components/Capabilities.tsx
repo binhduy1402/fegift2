@@ -1,7 +1,4 @@
-import {
-  ArrowRight,
-  Quote,
-} from "lucide-react";
+import { ArrowRight, Quote } from "lucide-react";
 
 import logoAIA from "../assets/logo_aia.png";
 import logoFubon from "../assets/logo_fubon.png";
@@ -41,271 +38,117 @@ const clients = [
   logoSUN,
 ];
 
-
 export default function Capabilities() {
-const scrollToContact = () => {
-const section = document.getElementById("contact");
+  const scrollToContact = () => {
+    const section = document.getElementById("contact");
 
-if (section) {
-  section.scrollIntoView({
-    behavior: "smooth",
-  });
-}
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
 
-};
+  return (
+    <section
+      id="capabilities"
+      className="reveal relative overflow-hidden bg-[#1a0d11] py-32"
+    >
+      {/* Background Glow */}
+      <div className="absolute left-[-150px] top-[-150px] h-[420px] w-[420px] rounded-full bg-[#7c142b]/15 blur-[140px]" />
+      <div className="absolute right-[-150px] bottom-[-150px] h-[420px] w-[420px] rounded-full bg-[#c49b47]/10 blur-[140px]" />
 
-return (
-<section
-  id="capabilities"
-  className="reveal relative overflow-hidden bg-[#fffdf9] py-24"
->
-<div className="absolute top-0 left-0 h-72 w-72 rounded-full bg-[#7c142b]/5 blur-3xl" />
-<div
-  className="
-    absolute
-    left-1/2
-    top-1/3
-    h-96
-    w-96
-    -translate-x-1/2
-    rounded-full
-    bg-[#d4af37]/5
-    blur-3xl
-    animate-pulse
-  "
-/>
-<div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#c9a227]/10 blur-3xl" />
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
 
-  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Header */}
 
-    <div className="mx-auto mb-16 max-w-3xl text-center">
-      <span className="mb-2 block text-[11px] font-bold tracking-[0.3em] uppercase text-[#7c142b]">
-        KHÁCH HÀNG TIN TƯỞNG
-      </span>
+        <div className="mx-auto mb-20 max-w-4xl text-center">
 
-      <h2 className="font-serif text-4xl font-bold text-[#1f1f1f]">
-        Đồng Hành Cùng Doanh Nghiệp
-      </h2>
+          <span className="mb-4 inline-block text-[11px] font-semibold uppercase tracking-[0.45em] text-[#c49b47]">
+            TRUSTED BY LEADING BRANDS
+          </span>
 
-      <p className="mt-4 text-sm leading-relaxed text-gray-600">
-        FESGift mang đến giải pháp quà tặng được thiết kế riêng,
-        giúp doanh nghiệp tạo dấu ấn chuyên nghiệp với khách hàng,
-        đối tác và nhân viên.
-      </p>
-    </div>
+          <h2 className="font-serif text-4xl leading-tight text-[#f5e8c8] md:text-6xl">
+            Đồng Hành Cùng
+            <span className="mt-2 block bg-gradient-to-r from-[#c49b47] via-[#f5e8c8] to-[#c49b47] bg-clip-text text-transparent">
+              Những Thương Hiệu Hàng Đầu
+            </span>
+          </h2>
 
-<div className="relative mb-16 overflow-hidden">
+          <div className="mx-auto mt-8 h-px w-28 bg-gradient-to-r from-transparent via-[#c49b47] to-transparent" />
 
-  {/* Fade trái */}
-  <div className="absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-[#fffdf9] to-transparent" />
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-[#bea98f]">
+            Hơn cả những dự án quà tặng, FESGift đồng hành cùng doanh nghiệp
+            trong việc xây dựng trải nghiệm thương hiệu chuyên nghiệp và tạo dấu
+            ấn lâu dài với khách hàng, đối tác và đội ngũ nội bộ.
+          </p>
 
-  {/* Fade phải */}
-  <div className="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-[#fffdf9] to-transparent" />
+        </div>
 
-  <div className="flex w-max animate-marquee gap-6">
+        {/* Logo Marquee */}
 
-          {[...clients, ...clients].map((logo, index) => (
-            <div
-              key={index}
-              className="
-                flex
-                h-28
-                min-w-[180px]
-                items-center
-                justify-center
-                px-10
-                transition-all
-                duration-300
-                hover:scale-105
-              "
-            >
+        <div className="relative mb-24 overflow-hidden">
+
+          {/* Fade Left */}
+
+          <div className="absolute left-0 top-0 z-20 h-full w-28 bg-gradient-to-r from-[#1a0d11] to-transparent" />
+
+          {/* Fade Right */}
+
+          <div className="absolute right-0 top-0 z-20 h-full w-28 bg-gradient-to-l from-[#1a0d11] to-transparent" />
+
+          <div className="marquee-track flex w-max gap-8">
+
+            {[...clients, ...clients].map((logo, index) => (
+
+              <div
+                key={index}
+                className="
+                  group
+                  flex
+                  h-32
+                  min-w-[210px]
+                  items-center
+                  justify-center
+                  rounded-2xl
+                  border
+                  border-[#c49b47]/15
+                  bg-[#231116]/90
+                  px-10
+                  backdrop-blur
+                  transition-all
+                  duration-500
+                  hover:-translate-y-1
+                  hover:border-[#c49b47]/45
+                  hover:bg-[#2b151b]
+                  hover:shadow-[0_0_35px_rgba(196,155,71,0.18)]
+                "
+              >
+
                 <img
                   src={logo}
                   alt={`Client ${index + 1}`}
                   className="
-                    max-h-16
+                    max-h-14
                     w-auto
                     object-contain
-                    opacity-70
+                    opacity-55
                     grayscale
                     transition-all
-                    duration-300
-                    hover:opacity-100
-                    hover:grayscale-0
+                    duration-500
+                    group-hover:scale-110
+                    group-hover:opacity-100
+                    group-hover:grayscale-0
+                    group-hover:drop-shadow-[0_0_18px_rgba(196,155,71,0.35)]
                   "
                 />
-            </div>
-          ))}
-    
-  </div>
 
-</div>
+              </div>
 
-    <div
-        className="
-          premium-card
-          mb-16
-          overflow-hidden
-          rounded-3xl
-          transition-all
-          duration-700
-          hover:-translate-y-1
-          hover:shadow-[0_30px_80px_rgba(124,20,43,0.12)]
-        "
-      >
-  <div className="grid lg:grid-cols-2">
+            ))}
 
-    {/* Image */}
-      <div className="group relative min-h-[320px] overflow-hidden">
-        <img
-          src="https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=1200&auto=format&fit=crop"
-          alt="Case Study"
-          className="
-            absolute
-            inset-0
-            h-full
-            w-full
-            object-cover
-            transition-transform
-            duration-1000
-            group-hover:scale-105
-          "
-        />
-      
-        <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent" />
-      </div>
-
-    {/* Content */}
-    <div className="flex flex-col justify-center p-10">
-      <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#7c142b]">
-        CASE STUDY TIÊU BIỂU
-      </span>
-
-      <h3 className="mt-3 font-serif text-3xl font-bold text-[#1f1f1f]">
-        Dự Án Quà Tặng Tết Doanh Nghiệp
-      </h3>
-
-<p className="mt-4 text-gray-600 leading-relaxed">
-  Triển khai hơn 20.000 bộ quà tặng được thiết kế riêng theo
-  nhận diện thương hiệu cho chương trình tri ân khách hàng cuối năm.
-</p>
-
-<div className="mt-6 grid grid-cols-3 gap-4">
-  <div>
-    <div className="text-2xl font-bold text-[#7c142b]">
-      20.000+
-    </div>
-    <div className="text-xs text-gray-500">
-      Bộ quà tặng
-    </div>
-  </div>
-
-  <div>
-    <div className="text-2xl font-bold text-[#7c142b]">
-      45
-    </div>
-    <div className="text-xs text-gray-500">
-      Ngày triển khai
-    </div>
-  </div>
-
-  <div>
-    <div className="text-2xl font-bold text-[#7c142b]">
-      100%
-    </div>
-    <div className="text-xs text-gray-500">
-      Đúng tiến độ
-    </div>
-  </div>
-</div>
-
-<div className="mt-6 space-y-3">
-  <div>✓ Thiết kế riêng theo thương hiệu</div>
-  <div>✓ Sản xuất số lượng lớn</div>
-  <div>✓ Giao hàng toàn quốc</div>
-  <div>✓ Hoàn thành đúng tiến độ</div>
-</div>
-      
-</div>
-</div>
-  </div>
-
-    <div className="grid gap-6 lg:grid-cols-3">
-      {testimonials.map((item, index) => (
-        <div
-          key={index}
-          className="
-            premium-card
-            relative
-            overflow-hidden
-            p-8
-            transition-all
-            duration-500
-            hover:-translate-y-2
-            hover:shadow-[0_20px_50px_rgba(124,20,43,0.12)]
-          "
-        >
-          <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#d4af37] to-[#f3d77a]" />
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#d4af37]/10">
-            <Quote className="h-6 w-6 text-[#d4af37]" />
           </div>
 
-          <p className="mt-4 text-sm leading-relaxed text-gray-600">
-            {item.content}
-          </p>
+        </div>
 
-          <div className="mt-6 border-t border-[#7c142b]/10 pt-4">
-              <div className="font-semibold text-[#2c2c2c]">
-                {item.name}
-              </div>
-            
-              <div className="mt-1 text-sm text-gray-500">
-                {item.role}
-              </div>
-            
-              <div className="mt-1 text-xs font-bold tracking-widest uppercase text-[#7c142b]">
-                {item.company}
-              </div>
-            </div>
-          </div>
-      ))}
-    </div>
-
-    <div className="mt-16 rounded-3xl luxury-gradient p-10 text-center text-white">
-      <h3 className="font-serif text-3xl font-bold">
-        Nhận Tư Vấn Giải Pháp Quà Tặng
-      </h3>
-
-      <p className="mx-auto mt-4 max-w-2xl text-sm text-white/80">
-        Chia sẻ nhu cầu của doanh nghiệp, FESGift sẽ đề xuất giải pháp phù hợp và báo giá hoàn toàn miễn phí.
-      </p>
-
-      <button
-        onClick={scrollToContact}
-        className="
-          mt-8
-          inline-flex
-          items-center
-          gap-2
-          rounded-xl
-          bg-white
-          px-8
-          py-4
-          text-xs
-          font-bold
-          uppercase
-          tracking-widest
-          text-[#7c142b]
-          transition-all
-          hover:-translate-y-1
-        "
-      >
-        Nhận Tư Vấn Ngay
-        <ArrowRight className="h-4 w-4" />
-      </button>
-    </div>
-
-  </div>
-</section>
-);
-}
+        {/* ===== CASE STUDY BẮT ĐẦU Ở PHẦN 1B ===== */}
