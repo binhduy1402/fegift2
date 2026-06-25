@@ -23,23 +23,48 @@
 }
 
 @layer base {
-  * { box-sizing: border-box; }
-  
-  html { scroll-behavior: smooth; }
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
-    @apply bg-bg-dark text-text-main font-sans antialiased;
-    background: radial-gradient(circle at top right, #3d0a14, #1a0b0f 70%);
+    /* Đặt màu nền tối sâu và chữ sáng */
+    @apply bg-[#1a0b0f] text-[#f3ebd2] font-sans antialiased;
     min-height: 100vh;
     overflow-x: hidden;
+    
+    /* Bỏ hết các gradient sáng cũ, thay bằng gradient tối */
+    background: radial-gradient(circle at top right, #3d0a14, #1a0b0f 70%);
+  }
+
+  /* Loại bỏ các lớp lưới cũ gây ra màu sáng */
+  body::before, body::after {
+    display: none; 
   }
 
   h1, h2, h3, h4, h5 {
-    @apply font-serif text-text-main leading-tight;
+    font-family: var(--font-serif);
+    letter-spacing: -.02em;
+    line-height: 1.08;
+    color: #f3ebd2; /* Chữ tiêu đề màu vàng kem sáng */
   }
 
-  ::selection {
-    @apply bg-primary-brand text-white;
+  p {
+    line-height: 1.85;
+    color: #d1b8a5; /* Chữ nội dung màu trầm hơn một chút */
+  }
+
+  /* Cập nhật màu scrollbar cho hợp với tông tối */
+  ::-webkit-scrollbar-track {
+    background: #1a0b0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#c8a34a, #7c142b);
   }
 }
 
