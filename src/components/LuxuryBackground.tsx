@@ -2,24 +2,41 @@ export default function LuxuryBackground() {
   return (
     <>
       {/* Base Background */}
-      <div className="fixed inset-0 -z-50 bg-[#f8f4ee]" />
+      <div className="fixed inset-0 -z-50 bg-[#12080b]" />
+
+      {/* Main Wine Gradient */}
+      <div
+        className="
+          fixed
+          inset-0
+          -z-40
+        "
+        style={{
+          background: `
+            radial-gradient(circle at top center,
+              rgba(124,20,43,.45),
+              rgba(26,11,15,.96) 45%,
+              #12080b 100%)
+          `,
+        }}
+      />
 
       {/* Gold Glow */}
       <div
         className="
           fixed
-          top-[-200px]
-          right-[-180px]
-          -z-40
+          top-[-180px]
+          right-[-160px]
+          -z-30
           h-[520px]
           w-[520px]
           rounded-full
-          blur-[150px]
-          opacity-60
+          blur-[180px]
+          opacity-80
         "
         style={{
           background:
-            "radial-gradient(circle, rgba(212,175,55,.12), transparent 70%)",
+            "radial-gradient(circle, rgba(196,155,71,.20), transparent 70%)",
         }}
       />
 
@@ -27,18 +44,18 @@ export default function LuxuryBackground() {
       <div
         className="
           fixed
-          bottom-[-250px]
+          bottom-[-220px]
           left-[-180px]
-          -z-40
+          -z-30
           h-[620px]
           w-[620px]
           rounded-full
-          blur-[180px]
-          opacity-60
+          blur-[200px]
+          opacity-90
         "
         style={{
           background:
-            "radial-gradient(circle, rgba(124,20,43,.08), transparent 70%)",
+            "radial-gradient(circle, rgba(124,20,43,.35), transparent 70%)",
         }}
       />
     </>
