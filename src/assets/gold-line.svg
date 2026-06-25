@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+
+    <defs>
+        <style>
+            .line{
+                fill:none;
+                stroke:#D4AF37;
+                stroke-width:1.4;
+                opacity:.55;
+                stroke-linecap:round;
+                stroke-linejoin:round;
+            }
+
+            .dot{
+                fill:#D4AF37;
+                opacity:.7;
+            }
+        </style>
+    </defs>
+
+    <!-- Outer Diamond -->
+    <path class="line" d="M160 30
+             L290 160
+             L160 290
+             L30 160
+             Z"></path>
+
+    <!-- Middle Diamond -->
+    <path class="line" d="M160 70
+             L250 160
+             L160 250
+             L70 160
+             Z"></path>
+
+    <!-- Cross -->
+    <path class="line" d="M160 30V290"></path>
+
+    <path class="line" d="M30 160H290"></path>
+
+    <!-- Corner Decoration -->
+    <path class="line" d="M30 160
+             C70 150 90 130 100 100"></path>
+
+    <path class="line" d="M290 160
+             C250 150 230 130 220 100"></path>
+
+    <path class="line" d="M30 160
+             C70 170 90 190 100 220"></path>
+
+    <path class="line" d="M290 160
+             C250 170 230 190 220 220"></path>
+
+    <!-- Dots -->
+    <circle class="dot" cx="160" cy="160" r="5"></circle>
+
+    <circle class="dot" cx="160" cy="30" r="2.5"></circle>
+
+    <circle class="dot" cx="160" cy="290" r="2.5"></circle>
+
+    <circle class="dot" cx="30" cy="160" r="2.5"></circle>
+
+    <circle class="dot" cx="290" cy="160" r="2.5"></circle>
+
+</svg>
