@@ -31,32 +31,67 @@
     scroll-behavior: smooth;
   }
 
-  body {
-    /* Đặt màu nền tối sâu và chữ sáng */
-    @apply bg-[#1a0b0f] text-[#f3ebd2] font-sans antialiased;
-    min-height: 100vh;
-    overflow-x: hidden;
-    
-    /* Bỏ hết các gradient sáng cũ, thay bằng gradient tối */
-    background: radial-gradient(circle at top right, #3d0a14, #1a0b0f 70%);
-  }
+      body {
+        @apply text-[#f2ead3] font-sans antialiased;
+      
+        min-height: 100vh;
+        overflow-x: hidden;
+      
+        background:
+          radial-gradient(
+            circle at top center,
+            rgba(124,20,43,.45),
+            rgba(26,11,15,.96) 45%,
+            #12080b 100%
+          );
+      }
 
-  /* Loại bỏ các lớp lưới cũ gây ra màu sáng */
-  body::before, body::after {
-    display: none; 
-  }
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
 
-  h1, h2, h3, h4, h5 {
-    font-family: var(--font-serif);
-    letter-spacing: -.02em;
-    line-height: 1.08;
-    color: #f3ebd2; /* Chữ tiêu đề màu vàng kem sáng */
-  }
+    background-image:
+        linear-gradient(rgba(196,155,71,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(196,155,71,.08) 1px, transparent 1px);
 
-  p {
-    line-height: 1.85;
-    color: #d1b8a5; /* Chữ nội dung màu trầm hơn một chút */
-  }
+    background-size:42px 42px;
+
+    opacity:.25;
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:24px;
+
+    border:1px solid rgba(196,155,71,.12);
+
+    pointer-events:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+
+    font-family:var(--font-serif);
+
+    color:#f5e8c8;
+
+    text-shadow:0 3px 12px rgba(0,0,0,.35);
+
+}
+
+      p{
+          color:#bea98f;
+          line-height:1.8;
+      }
 
   /* Cập nhật màu scrollbar cho hợp với tông tối */
   ::-webkit-scrollbar-track {
@@ -75,31 +110,97 @@
     margin-inline: auto;
   }
 
-  /* Buttons */
-  .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-3 rounded-sm 
-           bg-primary-brand text-white font-bold tracking-widest uppercase transition-all 
-           hover:bg-[#5f1023] hover:scale-105 shadow-[0_10px_20px_rgba(124,20,43,0.3)];
-  }
+.btn-primary{
 
-  /* Cards */
-  .premium-card {
-    @apply bg-surface-dark border border-gold-muted/20 p-8 rounded-sm shadow-xl transition-all duration-500;
-  }
-  
-  .premium-card:hover {
-    @apply border-gold-muted/50 transform -translate-y-2;
-  }
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.5rem;
+
+    padding:.9rem 2rem;
+
+    background:linear-gradient(
+        180deg,
+        #96203e,
+        #74162d
+    );
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:
+        0 12px 25px rgba(124,20,43,.4);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+    background:linear-gradient(
+        180deg,
+        #a92547,
+        #7c142b
+    );
+
+}
+   .premium-card{
+   
+       background:#231116;
+   
+       border:1px solid rgba(200,163,74,.15);
+   
+       border-radius:12px;
+   
+       box-shadow:
+           0 12px 30px rgba(0,0,0,.45),
+           inset 0 0 0 1px rgba(255,255,255,.02);
+   
+       transition:.35s;
+   }
+   
+   .premium-card:hover{
+   
+       transform:translateY(-6px);
+   
+       border-color:#c49b47;
+   
+       box-shadow:
+           0 20px 45px rgba(0,0,0,.6),
+           0 0 30px rgba(196,155,71,.15);
+   
+   }
 
   /* Section Styles */
   section {
     @apply relative py-24 lg:py-36;
   }
 
-  .section-badge {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-muted/30 
-           text-gold-muted text-[10px] font-bold tracking-[0.2em] uppercase bg-surface-dark/50 backdrop-blur-md;
-  }
+.section-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    padding:.5rem 1rem;
+    border-radius:999px;
+    border:1px solid rgba(196,155,71,.35);
+    background:rgba(124,20,43,.28);
+    color:#d8b86b;
+    font-size:11px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+}
 
   .section-title {
     @apply mt-6 font-serif text-4xl sm:text-5xl lg:text-6xl text-text-main;
