@@ -217,4 +217,27 @@ h5{
     background-image: linear-gradient(#c8a34a 1px, transparent 1px), linear-gradient(90deg, #c8a34a 1px, transparent 1px);
     background-size: 60px 60px;
   }
+
+.marquee-track{
+    width:max-content;
+    display:flex;
+    animation:marqueeLuxury 38s linear infinite;
+    will-change:transform;
+}
+
+.group:hover .marquee-track{
+    animation-play-state:paused;
+}
+
+@keyframes marqueeLuxury{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
 }
