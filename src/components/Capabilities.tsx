@@ -87,7 +87,7 @@ export default function Capabilities() {
 
           {/* Logo Marquee */}
           
-          <div className="relative mb-24 overflow-hidden group">
+          <div className="relative mb-24 overflow-hidden">
           
               <div className="absolute left-0 top-0 z-20 h-px w-full bg-gradient-to-r from-transparent via-[#c49b47]/20 to-transparent" />
 
