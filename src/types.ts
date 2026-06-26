@@ -5,6 +5,7 @@ export interface Collection {
   icon?: string;
   description: string;
   image: string;
+  url: string;
   badge?: string;
   highlights?: string[];
 }
