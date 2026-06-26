@@ -79,7 +79,7 @@ export default function Hero({ onDiscoverClick, onConsultClick }: HeroProps) {
           <div className="lg:col-span-6">
             <div className="relative hero-float group">
               <div className="overflow-hidden transition duration-700 group-hover:scale-[1.015] rounded-md border border-[#c49b47]/20 bg-[#231116] p-[6px] shadow-[0_30px_60px_rgba(0,0,0,.55)]">
-                <img src={heroImage} alt="FESGift Gift Collection" className="h-full w-full rounded-sm object-cover" />
+                <img src={heroImage} alt="FESGift Gift Collection" loading="eager" fetchPriority="high" decoding="async" className="h-full w-full rounded-sm object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#12080b]/30 via-transparent to-transparent rounded-sm" />
               </div>
               {/* Floating Card */}
