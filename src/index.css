@@ -61,9 +61,15 @@ body::before{
     opacity:.25;
 }
 
+/* Mobile: tắt hoàn toàn */
+body::after {
+  display: none;
+}
+
 @media (min-width: 768px) {
   body::after {
     content: "";
+    display: block;
     position: fixed;
     inset: 24px;
     border: 1px solid rgba(196,155,71,.12);
