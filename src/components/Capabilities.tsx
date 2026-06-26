@@ -120,6 +120,8 @@ export default function Capabilities() {
                 <img
                   src={logo}
                   alt={`Client ${index + 1}`}
+                  loading="lazy"
+                  decoding="async"
                   className="
                       max-h-14
                       w-auto
@@ -178,6 +180,8 @@ export default function Capabilities() {
               <img
                 src="https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=1400&auto=format&fit=crop"
                 alt="Case Study"
+                loading="lazy"
+                decoding="async"
                 className="
                   absolute
                   inset-0
