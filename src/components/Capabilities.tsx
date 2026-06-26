@@ -131,7 +131,6 @@ export default function Capabilities() {
                       group-hover:scale-110
                       group-hover:opacity-100
                       group-hover:grayscale-0
-                      group-hover:drop-shadow-[0_0_18px_rgba(196,155,71,0.35)]
                   "
                 />
 
