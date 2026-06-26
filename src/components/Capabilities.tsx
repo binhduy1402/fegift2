@@ -85,9 +85,11 @@ export default function Capabilities() {
 
         </div>
 
-        {/* Logo Marquee */}
-
-        <div className="relative mb-24 overflow-hidden">
+          {/* Logo Marquee */}
+          
+          <div className="relative mb-24 overflow-hidden group">
+          
+              <div className="absolute left-0 top-0 z-20 h-px w-full bg-gradient-to-r from-transparent via-[#c49b47]/20 to-transparent" />
 
           {/* Fade Left */}
 
@@ -106,22 +108,12 @@ export default function Capabilities() {
                 className="
                   group
                   flex
-                  h-32
-                  min-w-[210px]
+                  min-w-[220px]
                   items-center
                   justify-center
-                  rounded-2xl
-                  border
-                  border-[#c49b47]/15
-                  bg-[#231116]/90
-                  px-10
-                  backdrop-blur
+                  py-5
                   transition-all
                   duration-500
-                  hover:-translate-y-1
-                  hover:border-[#c49b47]/45
-                  hover:bg-[#2b151b]
-                  hover:shadow-[0_0_35px_rgba(196,155,71,0.18)]
                 "
               >
 
@@ -129,17 +121,17 @@ export default function Capabilities() {
                   src={logo}
                   alt={`Client ${index + 1}`}
                   className="
-                    max-h-14
-                    w-auto
-                    object-contain
-                    opacity-55
-                    grayscale
-                    transition-all
-                    duration-500
-                    group-hover:scale-110
-                    group-hover:opacity-100
-                    group-hover:grayscale-0
-                    group-hover:drop-shadow-[0_0_18px_rgba(196,155,71,0.35)]
+                      max-h-14
+                      w-auto
+                      object-contain
+                      opacity-45
+                      grayscale
+                      transition-all
+                      duration-500
+                      group-hover:scale-110
+                      group-hover:opacity-100
+                      group-hover:grayscale-0
+                      group-hover:drop-shadow-[0_0_18px_rgba(196,155,71,0.35)]
                   "
                 />
 
@@ -148,6 +140,7 @@ export default function Capabilities() {
             ))}
 
           </div>
+        <div className="absolute bottom-0 left-0 z-20 h-px w-full bg-gradient-to-r from-transparent via-[#c49b47]/20 to-transparent" />
 
         </div>
 
