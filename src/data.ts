@@ -70,6 +70,7 @@ description:
 "Giải pháp quà tặng giúp doanh nghiệp xây dựng mối quan hệ bền vững và tạo trải nghiệm tích cực cho khách hàng.",
 image:
 "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?q=80&w=800&auto=format&fit=crop",
+url: "https://fesgift.com/qua-tang-doanh-nghiep/qua-tang-cham-soc-khach-hang/",
 badge: "KHÁCH HÀNG",
 highlights: [
 "Giftset theo nhận diện thương hiệu",
@@ -87,6 +88,7 @@ description:
 "Phù hợp cho hội nghị, workshop, activation, lễ ra mắt sản phẩm và các chương trình truyền thông doanh nghiệp.",
 image:
 "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop",
+url: "https://fesgift.com/qua-tang-doanh-nghiep/qua-tang-su-kien/",
 badge: "SỰ KIỆN",
 highlights: [
 "Sản xuất số lượng lớn",
@@ -104,6 +106,7 @@ description:
 "Dòng quà tặng cao cấp dành cho đối tác chiến lược, khách hàng quan trọng và các chương trình tri ân đặc biệt.",
 image:
 "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop",
+url: "https://fesgift.com/qua-tang-ca-nhan/qua-theo-nguoi-nhan-qua-tang-ca-nhan/cho-vip-cua-ban-qua-theo-nguoi-nhan-qua-tang-ca-nhan/",
 badge: "VIP",
 highlights: [
 "Thiết kế sang trọng",
@@ -121,6 +124,7 @@ description:
 "Welcome Kit, quà sinh nhật, lễ tết và các chương trình nội bộ giúp nâng cao trải nghiệm nhân sự.",
 image:
 "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800&auto=format&fit=crop",
+url: "https://fesgift.com/qua-tang-doanh-nghiep/qua-gan-ket-doi-ngu/",
 badge: "NỘI BỘ",
 highlights: [
 "Welcome Kit",
