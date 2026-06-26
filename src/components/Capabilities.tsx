@@ -516,20 +516,20 @@ export default function Capabilities() {
                 hover:-translate-y-1
                 hover:border-[#c49b47]
                 hover:shadow-[0_0_35px_rgba(196,155,71,0.18)]
-              >
-                Nhận Tư Vấn Ngay
-
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />
-              </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  );
-
-}
+              "
+            >
+              Nhận Tư Vấn Ngay
+            
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />
+            </button>
+            
+            </div>      {/* relative z-10 */}
+            
+            </div>      {/* CTA */}
+            
+            </div>      {/* max-w-7xl */}
+            
+            </section>
+            
+            );
+            }
