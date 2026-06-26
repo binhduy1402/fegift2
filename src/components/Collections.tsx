@@ -65,7 +65,7 @@ export default function Collections({
           {COLLECTIONS.map((col) => (
             <div
               key={col.id}
-              onClick={() => onSelectCollection(col)}
+              onClick={() => window.open(col.url, "_blank")}
               className="
                 group
                 flex
