@@ -33,12 +33,12 @@ export default function About() {
       className="relative overflow-hidden bg-transparent py-28"
     >
       {/* Decorative Frame */}
-      <div className="pointer-events-none absolute inset-6 border border-[#c49b47]/10" />
+      <div className="pointer-events-none absolute inset-6 hidden border border-[#c49b47]/10 md:block" />
 
-      <div className="pointer-events-none absolute left-6 top-6 h-8 w-8 border-l border-t border-[#c49b47]/40" />
-      <div className="pointer-events-none absolute right-6 top-6 h-8 w-8 border-r border-t border-[#c49b47]/40" />
-      <div className="pointer-events-none absolute left-6 bottom-6 h-8 w-8 border-l border-b border-[#c49b47]/40" />
-      <div className="pointer-events-none absolute right-6 bottom-6 h-8 w-8 border-r border-b border-[#c49b47]/40" />
+      <div className="pointer-events-none absolute left-6 top-6 hidden h-8 w-8 border-l border-t border-[#c49b47]/40 md:block" />
+      <div className="pointer-events-none absolute right-6 top-6 hidden h-8 w-8 border-r border-t border-[#c49b47]/40 md:block" />
+      <div className="pointer-events-none absolute left-6 bottom-6 hidden h-8 w-8 border-l border-b border-[#c49b47]/40 md:block" />
+      <div className="pointer-events-none absolute right-6 bottom-6 hidden h-8 w-8 border-r border-b border-[#c49b47]/40 md:block" />
 
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(124,20,43,.18),transparent_65%)]" />
