@@ -241,14 +241,11 @@ try {
                         setErrMessage("");
                         setIsSubmitSuccess(false);
                       }}
-                      className={`min-w-[220px] px-6 py-3 rounded-xl transition-all duration-300 ${
-                        countdown > 0
-                          ? "bg-[#2b171c]
-                              text-[#c49b47]
-                              border
-                              border-[#c49b47]/15 cursor-not-allowed font-mono text-lg tracking-[0.25em] font-bold"
-                          : "bg-[#7c142b] hover:bg-[#91203a] text-white text-[11px] font-bold tracking-widest uppercase"
-                      }`}
+                        className={`min-w-[220px] px-6 py-3 rounded-xl transition-all duration-300 ${
+                          countdown > 0
+                            ? "bg-[#2b171c] text-[#c49b47] border border-[#c49b47]/15 cursor-not-allowed font-mono text-lg tracking-[0.25em] font-bold"
+                            : "bg-[#7c142b] hover:bg-[#91203a] text-white text-[11px] font-bold tracking-widest uppercase"
+                        }`}
                     >
                       {countdown > 0
                         ? formatTime(countdown)
