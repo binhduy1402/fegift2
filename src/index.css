@@ -225,7 +225,7 @@ h5{
     will-change:transform;
 }
 
-.group:hover .marquee-track{
+.marquee-track:hover{
     animation-play-state:paused;
 }
 
