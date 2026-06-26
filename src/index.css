@@ -61,17 +61,14 @@ body::before{
     opacity:.25;
 }
 
-body::after{
-
-    content:"";
-
-    position:fixed;
-
-    inset:24px;
-
-    border:1px solid rgba(196,155,71,.12);
-
-    pointer-events:none;
+@media (min-width: 768px) {
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 24px;
+    border: 1px solid rgba(196,155,71,.12);
+    pointer-events: none;
+  }
 }
 
 h1,
