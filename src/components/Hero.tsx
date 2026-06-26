@@ -9,7 +9,7 @@ interface HeroProps {
 export default function Hero({ onDiscoverClick, onConsultClick }: HeroProps) {
   return (
     <section className="gold-pattern relative overflow-hidden bg-transparent pt-24 pb-20 md:pt-36 md:pb-28">
-      <div className="pointer-events-none absolute inset-6 border border-[#c49b47]/20" />
+      <div className="pointer-events-none absolute inset-6 hidden border border-[#c49b47]/20 md:block" />
       <div className="pointer-events-none absolute left-6 top-6 h-10 w-10 border-l border-t border-[#c49b47]/40" />
       <div className="pointer-events-none absolute right-6 top-6 h-10 w-10 border-r border-t border-[#c49b47]/40" />
       <div className="pointer-events-none absolute left-6 bottom-6 h-10 w-10 border-l border-b border-[#c49b47]/40" />
