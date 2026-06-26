@@ -92,6 +92,8 @@ export default function Collections({
                 <img
                   src={col.image}
                   alt={col.title}
+                  loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   className="
                     h-full
