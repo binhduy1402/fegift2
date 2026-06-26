@@ -10,10 +10,10 @@ export default function Hero({ onDiscoverClick, onConsultClick }: HeroProps) {
   return (
     <section className="gold-pattern relative overflow-hidden bg-transparent pt-24 pb-20 md:pt-36 md:pb-28">
       <div className="pointer-events-none absolute inset-6 hidden border border-[#c49b47]/20 md:block" />
-      <div className="pointer-events-none absolute left-6 top-6 h-10 w-10 border-l border-t border-[#c49b47]/40" />
-      <div className="pointer-events-none absolute right-6 top-6 h-10 w-10 border-r border-t border-[#c49b47]/40" />
-      <div className="pointer-events-none absolute left-6 bottom-6 h-10 w-10 border-l border-b border-[#c49b47]/40" />
-      <div className="pointer-events-none absolute right-6 bottom-6 h-10 w-10 border-r border-b border-[#c49b47]/40" />
+      <div className="pointer-events-none absolute left-6 top-6 hidden h-10 w-10 border-l border-t border-[#c49b47]/40 md:block" />
+      <div className="pointer-events-none absolute right-6 top-6 hidden h-10 w-10 border-r border-t border-[#c49b47]/40 md:block" />
+      <div className="pointer-events-none absolute left-6 bottom-6 hidden h-10 w-10 border-l border-b border-[#c49b47]/40 md:block" />
+      <div className="pointer-events-none absolute right-6 bottom-6 hidden h-10 w-10 border-r border-b border-[#c49b47]/40 md:block" />
       {/* Background Effects */}
       <div className="absolute left-[-10%] top-1/2 h-[35rem] w-[35rem] -translate-y-1/2 rounded-full bg-[#7c142b]/30 blur-3xl pointer-events-none" />
       <div className="absolute right-[-5%] top-0 h-[30rem] w-[30rem] rounded-full bg-[#c49b47]/10 blur-3xl pointer-events-none" />
