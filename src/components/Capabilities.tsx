@@ -77,7 +77,7 @@ export default function Capabilities() {
 
           <div className="mx-auto mt-8 h-px w-28 bg-gradient-to-r from-transparent via-[#c49b47] to-transparent" />
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-[#bea98f]">
+          <p className="mx-auto mt-8 max-w-3xl text-base sm:text-lg leading-8 sm:leading-9 text-[#bea98f]">
             Hơn cả những dự án quà tặng, FESGift đồng hành cùng doanh nghiệp
             trong việc xây dựng trải nghiệm thương hiệu chuyên nghiệp và tạo dấu
             ấn lâu dài với khách hàng, đối tác và đội ngũ nội bộ.
@@ -161,11 +161,19 @@ export default function Capabilities() {
             hover:shadow-[0_30px_80px_rgba(196,155,71,0.12)]
           "
         >
-          <div className="grid lg:grid-cols-[1.15fr_1fr]">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
 
             {/* Image */}
 
-            <div className="relative min-h-[420px] overflow-hidden">
+           <div
+                className="
+                  relative
+                  h-[220px]
+                  sm:h-[320px]
+                  lg:min-h-[420px]
+                  overflow-hidden
+                "
+              >
 
               <img
                 src="https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=1400&auto=format&fit=crop"
@@ -211,13 +219,22 @@ export default function Capabilities() {
 
             {/* Content */}
 
-            <div className="flex flex-col justify-center p-10 lg:p-14">
+            <div
+                  className="
+                    flex
+                    flex-col
+                    justify-center
+                    p-5
+                    sm:p-8
+                    lg:p-10
+                  "
+                >
 
               <span className="text-[11px] font-semibold uppercase tracking-[0.4em] text-[#c49b47]">
                 CASE STUDY
               </span>
 
-              <h3 className="mt-4 font-serif text-4xl leading-tight text-[#f5e8c8]">
+              <h3 className="mt-4 font-serif text-3xl sm:text-4xl leading-tight text-[#f5e8c8]">
                 Dự Án Quà Tặng Tết
                 <span className="block">
                   Cho Doanh Nghiệp
@@ -234,11 +251,11 @@ export default function Capabilities() {
 
               {/* Stats */}
 
-              <div className="mt-10 grid grid-cols-3 gap-5">
+              <div className="mt-10 grid grid-cols-3 gap-3 sm:gap-5">
 
-                <div className="rounded-2xl border border-[#c49b47]/15 bg-[#12080b]/45 p-5 text-center">
+                <div className="rounded-2xl border border-[#c49b47]/15 bg-[#12080b]/45 p-3 sm:p-5 text-center">
 
-                  <div className="font-serif text-4xl text-[#c49b47]">
+                  <div className="font-serif text-2xl sm:text-4xl text-[#c49b47]">
                     20K+
                   </div>
 
@@ -276,7 +293,7 @@ export default function Capabilities() {
 
               {/* Highlights */}
 
-              <div className="mt-10 space-y-5">
+              <div className="mt-10 space-y-4">
 
                 {[
                   "Thiết kế riêng theo nhận diện thương hiệu",
@@ -294,8 +311,10 @@ export default function Capabilities() {
                       className="
                         mt-1
                         flex
-                        h-7
-                        w-7
+                        h-6
+                        w-6
+                        sm:h-7
+                        sm:w-7
                         items-center
                         justify-center
                         rounded-full
@@ -335,8 +354,10 @@ export default function Capabilities() {
                   bg-gradient-to-r
                   from-[#7c142b]
                   to-[#5a1022]
-                  px-8
-                  py-4
+                  px-6
+                  sm:px-8
+                  py-3
+                  sm:py-4
                   text-xs
                   font-semibold
                   uppercase
