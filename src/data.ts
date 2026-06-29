@@ -5,7 +5,7 @@ export const BRAND_INFO = {
   tagline: "Heritage & Grace",
   hotline: "0931 133 790",
   email: "fesgift@mars-vn.com",
-  address: "251B Luong Dinh Cua, An Phu Ward, Ho Chi Minh City, Vietnam",
+  address: "District 2, Ho Chi Minh City, VietNam",
 };
 
 export const COMPANY_STATS = [
