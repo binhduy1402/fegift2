@@ -516,7 +516,7 @@ try {
                     <img
                       src={zaloIcon}
                       alt="Zalo"
-                      className="w-5 h-5 object-contain"
+                      className="w-[26px] h-[26px] object-contain"
                     />
                   </div>
                   
